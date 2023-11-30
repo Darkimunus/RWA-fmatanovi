@@ -83,7 +83,7 @@
 
                     echo "<td>";
                     if ($row['ukupan_broj']<= $row['rezervirani']+$row['iznajmljeni']) {
-                        echo "<button disabled class='w3-black w3-text-white'>Rezerviraj</button>";
+                        echo "<button disabled class='w3-black w3-text-red'>Nije slobodno.</button>";
                     }
                     else {
                         //echo "<a href='rezerviraj.php?id=".$row['id']."'><button onclick='rezerviraj()'>Rezerviraj</button></a>";
